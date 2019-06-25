@@ -1,0 +1,15 @@
+current directory: /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+/home/ryota/.rbenv/versions/2.6.1/bin/ruby -I /home/ryota/.rbenv/versions/2.6.1/lib/ruby/2.6.0 -r ./siteconf20190619-11319-jq587q.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.so
+
+current directory: /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20190619-11319-a7ntv4/skiptrace

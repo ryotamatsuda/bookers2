@@ -1,0 +1,45 @@
+<% if book.errors.any? %>
+  <%= book.errors.count %>件のerrorが発生しました
+  <% book.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
+
+<h1>User info</h1>
+<table class="table table-striped">
+  <tr>
+    <th><%= attachment_image_tag user, :profile_image, :fill, 60, 60, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "no_image.jpg" %></th>
+  </tr>
+  <tr>
+    <th>name</th>
+    <td><%= user.name %></td>
+  </tr>
+  <tr>
+    <th>introduction</th>
+    <td><%= user.introduction %></td>
+  </tr>
+  <tr class="edit">
+    <th>
+      <%= link_to edit_user_path(user.id) do %>
+        <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+      <% end %>
+    </th>
+  </tr>
+</table>
+
+<h1>New Book</h1>
+<%= form_for(book) do |f| %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    Opinion<br />
+    <%= f.text_area :body %>
+  </div>
+
+  <%= f.submit 'Create Book', class: "btn btn-create-submit" %>
+
+<% end %>

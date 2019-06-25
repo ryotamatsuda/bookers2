@@ -1,0 +1,24 @@
+current directory: /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/binding_ninja-0.2.3/ext/binding_ninja
+/home/ryota/.rbenv/versions/2.6.1/bin/ruby -I /home/ryota/.rbenv/versions/2.6.1/lib/ruby/2.6.0 -r ./siteconf20190625-29712-18qts6.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/binding_ninja-0.2.3/ext/binding_ninja
+make "DESTDIR=" clean
+
+current directory: /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/binding_ninja-0.2.3/ext/binding_ninja
+make "DESTDIR="
+compiling binding_ninja.c
+binding_ninja.c: In function ‘auto_inject_binding_invoke’:
+binding_ninja.c:77:21: warning: unused variable ‘ext_mod’ [-Wunused-variable]
+   VALUE method_sym, ext_mod, options, binding, args_ary, cond;
+                     ^~~~~~~
+binding_ninja.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-cast-function-type’
+linking shared-object binding_ninja/binding_ninja.so
+
+current directory: /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/binding_ninja-0.2.3/ext/binding_ninja
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 binding_ninja.so ./.gem.20190625-29712-8cnm36/binding_ninja

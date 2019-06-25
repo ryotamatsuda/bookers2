@@ -1,0 +1,5 @@
+current directory: /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/childprocess-1.0.1/ext
+/home/ryota/.rbenv/versions/2.6.1/bin/ruby mkrf_conf.rb
+
+current directory: /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/childprocess-1.0.1/ext
+/home/ryota/.rbenv/versions/2.6.1/bin/ruby -rrubygems /mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/gems/rake-12.3.2/exe/rake RUBYARCHDIR\=/mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0-static/childprocess-1.0.1 RUBYLIBDIR\=/mnt/c/Users/ryota/webcamp/Rails/bookers3/Bookers3/vendor/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0-static/childprocess-1.0.1
