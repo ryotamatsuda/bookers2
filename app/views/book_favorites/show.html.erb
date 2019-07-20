@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <%= render 'users/list', book: @book_new, user: current_user %>
+    </div>
+    <div class="col-md-9">
+      <div class="body">
+        <h1>いいねしたユーザー</h1>
+        <table class="table table-striped">
+          <tr>
+            <th>User_image</th>
+            <th>Name</th>
+            <th>Show</th>
+          </tr>
+          
+          <% @favorites.where(book_id: @book_id).each do |favorite| %>
+            <tr>
+              <td><%= attachment_image_tag favorite.user, :profile_image, :fill, 60, 60, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "no_image.jpg" %></td>
+              <td><%= favorite.user.name %></td>
+              <td><%= link_to "Show", user_path(favorite.user.id) %></td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

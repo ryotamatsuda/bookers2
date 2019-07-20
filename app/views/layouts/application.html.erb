@@ -16,6 +16,9 @@
         <nav>
           <% if user_signed_in? %>
             <li>
+              <%= link_to "現在ログイン中のユーザー：#{current_user.name}", user_path(current_user.id) %>
+            </li>
+            <li>
               <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
               <%= link_to "Home", user_path(current_user.id) %>
             </li>

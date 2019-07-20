@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <%= render 'users/list', book: @book_new, user: @user %>
+    </div>
+    <div class="col-md-9">
+      <div class="body">
+        <h1><%= @user.name %>のフォロワー</h1>
+        <table class="table table-striped">
+          <tr>
+            <th>image</th>
+            <th>name</th>
+            <th>show</th>
+            <th></th>
+          </tr>
+          <% @user.followers.each do |follower_user| %>
+          <tr>
+            <td><%= attachment_image_tag follower_user, :profile_image, :fill, 30, 10, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "no_image.jpg" %></td>
+            <td><%= follower_user.name %></td>
+            <td><%= link_to "Show", user_path(follower_user.id) %></td>
+            <td>
+              <% if current_user.following?(follower_user) %>
+                <%= link_to "フォロー中", user_relationships_path(follower_user.id), method: "delete" %>
+              <% else %>
+                <%= link_to "フォローする", user_relationships_path(follower_user.id), method: "post" %>
+              <% end %>
+            </td>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

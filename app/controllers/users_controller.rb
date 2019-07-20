@@ -2,10 +2,10 @@ class UsersController < ApplicationController
 
   before_action :authenticate_user!
   before_action :check_user_id, only: [:edit,:update]
-  before_action :book_for_list
+  before_action :book_new
 
-  def book_for_list
-    @book_for_list=Book.new
+  def book_new
+    @book_new=Book.new
   end
 
   def check_user_id
